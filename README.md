@@ -1,9 +1,27 @@
 
 # Self hosted Vaultwarden setup
 
-This project contains a tutorial to make vaultwarden work from a home network allowing it to be used from everywhere. The passwords are backed up into nextcloud. The following diagram shows what will be installed.
 
 ![Network](static/diagram.png)
+
+- [Self hosted Vaultwarden setup](#self-hosted-vaultwarden-setup)
+  * [Prerequisites](#prerequisites)
+  * [Bitwarden VM](#bitwarden-vm)
+    + [Install Vaultwarden](#install-vaultwarden)
+    + [Configure Vaultwarden](#configure-vaultwarden)
+    + [Configure local NGINX](#configure-local-nginx)
+  * [Configure backup](#configure-backup)
+    + [Firewall Vaultwarden](#firewall-vaultwarden)
+  * [Nginx VM](#nginx-vm)
+    + [Install NGINX](#install-nginx)
+    + [Create a Letsencrypt certificate](#create-a-letsencrypt-certificate)
+    + [Configure NGINX](#configure-nginx)
+    + [Firewall NGINX](#firewall-nginx)
+- [Nextcloud VM](#nextcloud-vm)
+
+
+This project contains a tutorial to make vaultwarden work from a home network allowing it to be used from everywhere. The passwords are backed up into nextcloud.
+
 
 ## Prerequisites
 
