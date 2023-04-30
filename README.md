@@ -157,6 +157,11 @@ This VM has the only function of acting as reverse proxy but also being an added
     ```
 
 1. At the end a path to your certificates should be provided.
+1. Create a cronjob to renew the certificate:
+
+    ```bash
+    0 12 * * * /usr/bin/certbot renew --quiet
+    ```
 
 ### Configure NGINX
 
