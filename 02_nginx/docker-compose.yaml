@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  nginx:
+    container_name: nginx
+    image: nginx:latest
+    restart: unless-stopped
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/conf.d/vaultwarden.conf:ro
+      - /etc/letsencrypt/live/<YOUR_DOMAIN>.duckdns.org/fullchain.pem:/etc/nginx/crts/cert.pem:ro
+      - /etc/letsencrypt/live/<YOUR_DOMAIN>.duckdns.org/privkey.pem:/etc/nginx/crts/key.pem:ro
+    ports:
+      - "8901:443" # Use different than 443 to make it harder to find
