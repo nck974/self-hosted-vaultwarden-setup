@@ -75,7 +75,7 @@ This VM contains the Vaulwarden application together with an NGINX that is serve
 
 ## Configure backup
 
-1. If you don't want to use `nextcloud` for backups, create a new configuration using the wizard of executing. Otherwise just edit the the file `01_vaultwarden/backup-config/rclone/rclone.conf` to point to your server as suggested in the following step:
+1. If you don't want to use `nextcloud` for backups, create a new configuration using the wizard of executing the following command. Otherwise just edit the the file `01_vaultwarden/backup-config/rclone/rclone.conf` to point to your server as suggested in the following step:
 
     ```bash
     docker run --rm -it \
