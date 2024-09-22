@@ -41,6 +41,7 @@ services:
     environment:
       RCLONE_REMOTE_NAME: 'nextcloud'
       RCLONE_REMOTE_DIR: '/00_backups/02_bitwarden/' # Your folder in nextcloud
+      RCLONE_GLOBAL_FLAG: '--no-check-certificate' # Otherwise since recen versions it will not work
       CRON: '0 04 */5 * *'
       ZIP_ENABLE: 'TRUE'
       ZIP_PASSWORD: ${BACKUP_PASSWORD}
