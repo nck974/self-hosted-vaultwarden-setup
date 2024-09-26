@@ -48,7 +48,7 @@ This VM contains the Vaulwarden application together with an NGINX that is serve
 
         ```bash
         apt-get install argon2
-        echo -n "<MY_SECURE_PASSWORD" | argon2 "$(openssl rand -base64 32)" -e -id -k 65540 -t 3 -p 4 | sed 's#\$#\$\$#g'
+        echo -n "<MY_SECURE_PASSWORD" | argon2 "$(openssl rand -base64 32)" -e -id -k 65540 -t 3 -p 4
         ```
 
     1. `SMTP_PASSWORD`: Generate a password for this application in [google](https://myaccount.google.com/apppasswords).
