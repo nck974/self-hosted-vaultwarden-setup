@@ -18,6 +18,7 @@
     + [Configure NGINX](#configure-nginx)
     + [Firewall NGINX](#firewall-nginx)
 - [Nextcloud VM](#nextcloud-vm)
+- [Restore backup](#estore-backup)
 
 
 This project contains a tutorial to make vaultwarden work from a home network allowing it to be used from everywhere. The passwords are backed up into nextcloud.
