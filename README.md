@@ -198,3 +198,12 @@ Generate a basic firewall for the VM.
 # Nextcloud VM
 
 The configuration of nextcloud is out of the scope of this project.
+
+
+# Restore backup
+
+1. You can just start the stack (make sure to back your backup password and docker compose configuration).
+2. Some files will be created in the mapped folder.
+3. Bring down the stack.
+4. Extract the backup using the backups password.
+5. Copy the content of the backup inside the mapped folder and start again the stack.
